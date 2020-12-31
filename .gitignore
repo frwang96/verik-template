@@ -1,0 +1,11 @@
+.idea/
+/.run/
+.gradle/
+out/
+build/
+__pycache__/
+
+headers.kt
+
+*.swp
+.DS_Store
