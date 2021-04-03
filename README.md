@@ -15,11 +15,8 @@ The project source directory. All source code should be written in `/src/main/ko
 `/build.gradle.kts`
 The Gradle build configuration file.
 
-`/gradlew`
-The Gradle wrapper shell script for Mac and Linux. `./gradlew build` will run the Kotlin compiler.
-
-`/gradlew.bat`
-The Gradle wrapper batch script for Windows. `gradlew build` will run the Kotlin compiler.
+`/settings.gradle.kts`
+The Gradle settings configuration file.
 
 `/vkproject.yaml`
 The Verik project configuration file.
