@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Francis Wang
+ * Copyright (c) 2021 Francis Wang
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,19 @@
  * limitations under the License.
  */
 
-rootProject.name = "verik-template"
+package template
 
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        mavenLocal()
+import io.verik.core.*
+
+@Top
+class Template: Module() {
+
+    val x = 0
+
+    @Run
+    fun f() {
+        random()
     }
 }
+
+fun g() {}

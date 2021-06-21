@@ -1,11 +1,8 @@
 /.run/
 .gradle/
 out/
-build/
 __pycache__/
-*.iml
-
-headers.kt
+build/
 
 *.swp
 .DS_Store

@@ -4,9 +4,9 @@
 
 !codeStyles/codeStyleConfig.xml
 !codeStyles/Project.xml
-!inspectionProfiles/profiles_settings.xml
-!inspectionProfiles/verik.xml
-!jsonSchemas.xml
+!copyright/apache.xml
+!copyright/profiles_settings.xml
+!inspectionProfiles/Project_Default.xml
 !misc.xml
 !modules.xml
 !vcs.xml
