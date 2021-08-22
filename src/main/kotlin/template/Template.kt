@@ -23,7 +23,11 @@ class Template: Module() {
 
     @Run
     fun f() {
-        println("hello world")
+        g()
         finish()
     }
+}
+
+fun g() {
+    println("hello world")
 }
