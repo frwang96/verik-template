@@ -21,12 +21,9 @@ import io.verik.core.*
 @Top
 class Template: Module() {
 
-    val x = 0
-
     @Run
     fun f() {
-        random()
+        println("hello world")
+        finish()
     }
 }
-
-fun g() {}

@@ -15,18 +15,15 @@
  */
 
 plugins {
-    kotlin("jvm") version "1.4.20"
-    id("io.verik.verik-plugin") version "1.0-SNAPSHOT"
+    id("io.verik.verik-plugin") version "0.1.1"
 }
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.20")
-    implementation("io.verik:verik-core:1.0-SNAPSHOT")
+    implementation("io.verik:verik-core:0.1.1")
 }
 
 verik {

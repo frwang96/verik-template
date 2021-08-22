@@ -15,10 +15,3 @@
  */
 
 rootProject.name = "verik-template"
-
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        mavenLocal()
-    }
-}
