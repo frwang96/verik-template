@@ -19,12 +19,33 @@ package template
 import io.verik.core.*
 
 @Top
-class Template: Module() {
+class Template : Module() {
+
+    @Make
+    val m = M(
+        clk = false,
+        rst = false,
+        x = nc()
+    )
 
     @Run
     fun f() {
         g()
         finish()
+    }
+}
+
+class M(
+    @In var clk: Boolean,
+    @In var rst: Boolean,
+    @Out var x: Boolean
+) : Module() {
+
+    @Seq
+    fun f() {
+        on (posedge(clk)) {
+            x = rst
+        }
     }
 }
 
