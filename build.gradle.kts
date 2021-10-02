@@ -15,7 +15,7 @@
  */
 
 plugins {
-    id("io.verik.verik-plugin") version "0.1.4"
+    id("io.verik.verik-plugin") version "0.1.5"
 }
 
 repositories {
@@ -23,9 +23,5 @@ repositories {
 }
 
 dependencies {
-    implementation("io.verik:verik-core:0.1.4")
-}
-
-verik {
-    top = "Template"
+    implementation("io.verik:verik-core:0.1.5")
 }
