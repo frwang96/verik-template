@@ -18,31 +18,26 @@ package template
 
 import io.verik.core.*
 
-typealias WIDTH = `8`
+class Adder<N : `*`>(
+    @In var a: Ubit<N>,
+    @In var b: Ubit<N>,
+    @Out var x: Ubit<N>
+) : Module() {
 
-@Top
-class Template : Module() {
-
-    var a: Ubit<WIDTH> = nc()
-    var b: Ubit<WIDTH> = nc()
-    var x: Ubit<WIDTH> = nc()
-
-    @Make
-    val adder = Adder<WIDTH>(a, b, x)
-
-    @Run
-    fun test() {
-        repeat(64) { transact() }
+    fun fullAdder(a: Boolean, b: Boolean, c: Boolean): Ubit<`2`> {
+        val x: Ubit<`2`> = u0()
+        x[0] = a xor b xor c
+        x[1] = (a && b) || (a && c) || (b && c)
+        return x
     }
 
-    @Task
-    fun transact() {
-        a = randomUbit()
-        b = randomUbit()
-        delay(1)
-        val expected = a + b
-        if (x == expected) print("PASS ")
-        else print("FAIL ")
-        println("$a + $b = $x")
+    @Com
+    fun f() {
+        var c = false
+        for (i in 0 until i<N>()) {
+            val fa = fullAdder(a[i], b[i], c)
+            x[i] = fa[0]
+            c = fa[1]
+        }
     }
 }
