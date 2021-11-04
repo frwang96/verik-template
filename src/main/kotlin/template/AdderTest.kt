@@ -20,8 +20,8 @@ import io.verik.core.*
 
 typealias WIDTH = `8`
 
-@Top
-class Template : Module() {
+@SimTop
+class AdderTest : Module() {
 
     var a: Ubit<WIDTH> = nc()
     var b: Ubit<WIDTH> = nc()
@@ -33,6 +33,7 @@ class Template : Module() {
     @Run
     fun test() {
         repeat(64) { transact() }
+        finish()
     }
 
     @Task
