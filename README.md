@@ -9,7 +9,7 @@ The IntelliJ IDEA project configuration directory. It stores code styles and ins
 configurations specific to Verik.
 
 `src`
-The project source directory. All source code should be contained in `src/main/kotlin`.
+The project source directory.
 
 `build.gradle.kts`
 The Gradle build configuration file.
@@ -17,5 +17,5 @@ The Gradle build configuration file.
 `settings.gradle.kts`
 The Gradle settings configuration file.
 
-`build/verik`
+`build`
 The build output directory.
