@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-package template
-
 import io.verik.core.*
 
 class Adder<N : `*`>(
@@ -25,10 +23,10 @@ class Adder<N : `*`>(
 ) : Module() {
 
     fun fullAdder(a: Boolean, b: Boolean, c: Boolean): Ubit<`2`> {
-        val x: Ubit<`2`> = u0()
-        x[0] = a xor b xor c
-        x[1] = (a && b) || (a && c) || (b && c)
-        return x
+        return cat(
+            a xor b xor c,
+            (a && b) || (a && c) || (b && c)
+        )
     }
 
     @Com

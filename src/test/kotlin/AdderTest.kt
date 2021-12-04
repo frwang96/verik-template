@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-package template
-
 import io.verik.core.*
 
 typealias WIDTH = `8`

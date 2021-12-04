@@ -15,13 +15,14 @@
  */
 
 plugins {
-    id("io.verik.verik-plugin") version "0.1.8"
+    id("io.verik.verik-plugin") version "0.1.9"
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-    implementation("io.verik:verik-core:0.1.8")
+    implementation("io.verik:verik-core:0.1.9")
 }
