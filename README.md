@@ -1,23 +1,10 @@
 # Verik Template
 
-Template project for Verik. For setup instructions, go to [setup](https://verik.io/setup/index.html). For the tutorial,
-go to [tutorial](https://verik.io/tutorial/index.html). For documentation, go
-to [documentation](https://verik.io/docs/index.html).
+Template project for [Verik](https://github.com/frwang96/verik). Refer to
+[examples](https://github.com/frwang96/verik-examples) for example projects.
 
-## Project Files
-
-`.idea`
-The IntelliJ IDEA project configuration directory. It stores code styles and inspection profile
-configurations specific to Verik.
-
-`src`
-The project source directory.
-
-`build.gradle.kts`
-The Gradle build configuration file.
-
-`settings.gradle.kts`
-The Gradle settings configuration file.
-
-`build`
-The build output directory.
+- `.idea`: The IntelliJ IDEA project configuration directory.
+- `src`: Project source directory.
+- `build`: Build output directory.
+- `build.gradle.kts`: Gradle build file.
+- `settings.gradle.kts`: Gradle settings file.
