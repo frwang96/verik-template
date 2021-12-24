@@ -3,7 +3,7 @@ import io.verik.core.*
 typealias WIDTH = `8`
 
 @SimTop
-class AdderTest : Module() {
+object AdderTest : Module() {
 
     var a: Ubit<WIDTH> = nc()
     var b: Ubit<WIDTH> = nc()
