@@ -2,8 +2,11 @@
 !*/
 !.gitignore
 
+# IntelliJ settings for Verik projects
 !codeStyles/codeStyleConfig.xml
 !codeStyles/Project.xml
+!fileTemplates/internal/*.kt
 !inspectionProfiles/Project_Default.xml
+!externalDependencies.xml
 !misc.xml
 !vcs.xml
