@@ -2,8 +2,11 @@
 
 import io.verik.core.*
 
+/**
+ * Instantiate [Counter] and toggle [clk] and [rst].
+ */
 @SimTop
-object CounterTop : Module() {
+object CounterTest : Module() {
 
     var clk: Boolean = nc()
     var rst: Boolean = nc()
@@ -17,7 +20,7 @@ object CounterTop : Module() {
     )
 
     @Run
-    fun toggleClk() {
+    fun runClk() {
         clk = false
         forever {
             delay(1)
@@ -26,7 +29,7 @@ object CounterTop : Module() {
     }
 
     @Run
-    fun toggleRst() {
+    fun runRst() {
         rst = true
         repeat(2) { wait(posedge(clk)) }
         rst = false

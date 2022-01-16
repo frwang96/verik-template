@@ -2,6 +2,9 @@
 
 import io.verik.core.*
 
+/**
+ * 8-bit counter module that asserts a strobe signal when [count] is true.
+ */
 @SynthTop
 class Counter(
     @In var clk: Boolean,
@@ -12,7 +15,7 @@ class Counter(
     var count: Ubit<`8`> = nc()
 
     @Seq
-    fun setCount() {
+    fun seqCount() {
         on(posedge(clk)) {
             if (rst) count = u0<`8`>()
             else count += u(1)
@@ -20,7 +23,7 @@ class Counter(
     }
 
     @Com
-    fun setStrobe() {
+    fun comStrobe() {
         strobe = (count == u0<`8`>())
     }
 }
