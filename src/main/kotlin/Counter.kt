@@ -1,5 +1,6 @@
 @file:Verik
 
+import imported.Count
 import io.verik.core.*
 
 /**
@@ -12,7 +13,7 @@ class Counter(
     @Out var strobe: Boolean
 ): Module() {
 
-    var count: Ubit<`8`> = nc()
+    var count: Count = nc()
 
     @Seq
     fun seqCount() {
