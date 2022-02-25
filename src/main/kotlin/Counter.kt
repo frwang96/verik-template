@@ -6,7 +6,6 @@ import io.verik.core.*
 /**
  * 8-bit counter module that asserts a strobe signal when [count] is true.
  */
-@SynthTop
 class Counter(
     @In var clk: Boolean,
     @In var rst: Boolean,

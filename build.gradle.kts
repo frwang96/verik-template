@@ -1,9 +1,9 @@
 plugins {
-    id("io.verik.verik-plugin") version "0.1.13"
+    kotlin("jvm") version "1.5.31"
+    id("io.verik.verik-plugin") version "0.1.14"
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 

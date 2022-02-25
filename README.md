@@ -7,4 +7,3 @@ Template project for [Verik](https://github.com/frwang96/verik). Refer to
 - `build`: Build output directory.
 - `src`: Project source directory.
 - `build.gradle.kts`: Gradle build file.
-- `settings.gradle.kts`: Gradle settings file.

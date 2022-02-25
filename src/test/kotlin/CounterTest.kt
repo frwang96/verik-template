@@ -5,7 +5,7 @@ import io.verik.core.*
 /**
  * Instantiate [Counter] and toggle [clk] and [rst].
  */
-@SimTop
+@Entry
 object CounterTest : Module() {
 
     var clk: Boolean = nc()
