@@ -4,7 +4,7 @@ import imported.Count
 import io.verik.core.*
 
 /**
- * 8-bit counter module that asserts a strobe signal when [count] is true.
+ * 8-bit counter module that asserts a strobe signal when [count] is zero.
  */
 class Counter(
     @In var clk: Boolean,

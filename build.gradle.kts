@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.5.31"
-    id("io.verik.verik-plugin") version "0.1.14"
+    id("io.verik.verik-plugin") version "0.1.15"
 }
 
 repositories {
