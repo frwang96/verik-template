@@ -17,13 +17,13 @@ class Counter(
     @Seq
     fun seqCount() {
         on(posedge(clk)) {
-            if (rst) count = u0<`8`>()
+            if (rst) count = u0()
             else count += u(1)
         }
     }
 
     @Com
     fun comStrobe() {
-        strobe = (count == u0<`8`>())
+        strobe = count.eqz()
     }
 }
