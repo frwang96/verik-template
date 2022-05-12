@@ -33,14 +33,14 @@ object CounterTest : Module() {
         rst = true
         repeat(2) { wait(posedge(clk)) }
         rst = false
-        delay(1000)
+        delay(2000)
         finish()
     }
 
     @Seq
-    fun printStrobe() {
+    fun print() {
         on (posedge(clk)) {
-            println("strobe = $strobe")
+            println("time=${time()} count=${counter.count} strobe=$strobe")
         }
     }
 }
